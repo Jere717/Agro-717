@@ -1,0 +1,282 @@
+/* codigo variado */
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+/* fin codigo variado */
+
+/* header */
+
+.header {
+    grid-area: header;
+    background-color: #FDFEFE;
+}
+
+.header .box-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .box-1 .cr-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .box-1 .cr-logo .logo {
+    width: 150px;
+    height: auto;
+}
+
+.header .box-1 .btn-home {
+    text-align: right;
+}
+
+.header .box-1 .btn-home a {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: #239B56;
+    text-decoration: none;
+    color: white;
+    border: solid black 2px;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+.header .box-1 .btn-home a:hover {
+    transform: scale(1.1);
+    background-color: fff;
+}
+
+/* fin header */
+
+/* navbar */
+
+.navbar {
+    grid-area: navbar;
+    background-color: #FDFEFE;
+    border-bottom: solid black 1px;
+}
+
+.navbar .box-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navbar .box-1 .dropdown-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .box-1 .dropdown-box .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+}
+
+.navbar .box-1 .dropdown-box .dropbtn {
+    background-color: #5DADE2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+    border: solid black 2px;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+.navbar .box-1 .dropdown-box .dropbtn:hover {
+    transform: scale(1.1);
+}
+
+.navbar .box-1 .dropdown-box .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navbar .box-1 .dropdown-box .dropdown-content a {
+    background-color: #F4D03F;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: solid black 2px;
+    border-radius: 15px;
+}
+
+.navbar .box-1 .dropdown-box .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.navbar .box-1 .dropdown-box .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* fin navbar */
+
+/* contenido */
+
+.main {
+    grid-area: main;
+    background-color: #FDFEFE;
+}
+
+/* fin contenido */
+
+/* footer */
+
+.footer {
+    grid-area: footer;
+    background-color: #239B56;
+    display: grid;
+    grid-template:
+        "footer-box-1" 60%
+        "footer-box-2" 40%
+    ;
+    align-items: center;
+    border-top: solid black 1px;
+}
+
+.footer .box-1 p {
+    grid-area: footer-box-1;
+    color: #F1C40F;
+    text-align: center;
+}
+
+.footer .box-2 p {
+    grid-area: footer-box-2;
+    color: white;
+    text-align: center;
+}
+
+/* fin footer */
+
+/* grid */
+
+.grid-container {
+    display: grid;
+    grid-template:
+        "header" 400px
+        "navbar" 100px
+        "main" auto
+        "footer" 100px
+    ;
+}
+
+/* fin grid */
+
+/* ! responsive */
+
+/* ! responsive = celulares pequeños */
+
+@media screen and (max-width: 320px) {
+    .grid-container {
+        grid-template:
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = clelulares normales */
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template:
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = tablets */
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template:
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = pantallas chicas */
+
+@media screen and (max-width: 960px) {
+    .grid-container {
+        grid-template:
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = laptops */
+
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template:
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = pantallas grandes */
+
+@media screen and (max-width: 1328px) {
+    .grid-container {
+        grid-template:
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! fin responsive */

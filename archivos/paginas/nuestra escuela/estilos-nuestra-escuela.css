@@ -1,0 +1,291 @@
+/* codigo variado */
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+/* fin codigo variado */
+
+/* header */
+
+.header {
+    grid-area: header;
+    background-color: #FDFEFE;
+}
+
+.header .box-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .box-1 .cr-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .box-1 .cr-logo .logo {
+    width: 25vh;
+    height: auto;
+    padding: 5px;
+}
+
+.header .box-1 .btn-home {
+    text-align: right;
+}
+
+.header .box-1 .btn-home a {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: #239B56;
+    text-decoration: none;
+    color: white;
+    border: solid black 2px;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+.header .box-1 .btn-home a:hover {
+    transform: scale(1.1);
+    background-color: fff;
+}
+/* fin header */
+
+/* navbar */
+
+.navbar {
+    grid-area: navbar;
+    background-color: #FDFEFE;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    align-items: center;
+    justify-items: center;
+    border-bottom: solid black 1px;
+}
+
+.navbar .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: #5DADE2;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+.navbar .btn:hover {
+    transform: scale(1.1);
+    color: fff;
+}
+
+/* fin navbar */
+
+/* contenido */
+
+.main {
+    grid-area: main;
+    background-color: #FDFEFE;
+    display: grid;
+    grid-template:
+        "cont-1" 30%
+        "cont-2" 70%
+    ;
+}
+
+.main .box-1 {
+    grid-area: cont-1;
+    padding: 15px;
+}
+
+.main h2 {
+    padding-bottom: 5px;
+}
+
+.main p {
+    padding-top: 5px;
+}
+
+.main .box-2 {
+    grid-area: cont-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main .box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.main .box-2 img {
+    width: 30vh;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* fin contenido */
+
+/* footer */
+
+.footer {
+    grid-area: footer;
+    background-color: #239B56;
+    display: grid;
+    grid-template:
+        "footer-box-1" 60%
+        "footer-box-2" 40%
+    ;
+    align-items: center;
+    border-top: solid black 1px;
+}
+
+.footer .box-1 p {
+    grid-area: footer-box-1;
+    color: #F1C40F;
+    text-align: center;
+}
+
+.footer .box-2 p {
+    grid-area: footer-box-2;
+    color: white;
+    text-align: center;
+}
+
+/* fin footer */
+
+/* grid */
+
+.grid-container {
+    display: grid;
+    grid-template:
+        "header" 400px
+        "navbar" 100px
+        "main" auto
+        "footer" 100px
+    ;
+}
+
+/* fin grid */
+
+/* ! responsive */
+
+/* ! responsive = celulares pequeños */
+
+@media screen and (max-width: 320px)
+{
+    .grid-container{
+        grid-template: 
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = clelulares normales */
+
+@media screen and (max-width: 480px)
+{
+    .grid-container{
+        grid-template: 
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = tablets */
+
+@media screen and (max-width: 768px)
+{
+    .grid-container{
+        grid-template: 
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = pantallas chicas */
+
+@media screen and (max-width: 960px)
+{
+    .grid-container{
+        grid-template: 
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = laptops */
+
+@media screen and (max-width: 1024px)
+{
+    .grid-container{
+        grid-template: 
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! responsive = pantallas grandes */
+
+@media screen and (max-width: 1328px)
+{
+    .grid-container{
+        grid-template: 
+            ""
+            ""
+            ""
+            ""
+        ;
+    }
+}
+
+/* ! ---- */
+
+/* ! fin responsive */
