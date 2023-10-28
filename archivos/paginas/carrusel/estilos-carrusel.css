@@ -1,3 +1,5 @@
+/* # codigo variado */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,10 @@ body {
     background: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
 	background-repeat: no-repeat;
 }
+
+/* # fin codigo variado */
+
+/* # header */
 
 .encabezado {
     display: flex;
@@ -27,6 +33,10 @@ body {
     padding-top: 20px;
     padding-bottom: 5px;
 }
+
+/* # fin header */
+
+/* # boton */
 
 .boton {
     display: flex;
@@ -49,6 +59,10 @@ body {
     transform: scale(1.1);
     color: blue;
 }
+
+/* # fin boton */
+
+/* # carrusel */
 
 .slider-box {
     width: 1280px;
@@ -109,6 +123,10 @@ body {
         margin-left: -300%;
     }
 }
+
+/* # fin carrusel */
+
+/* ! responsive  */
 
 @media(max-width: 1200px) {
 
@@ -199,3 +217,5 @@ body {
     }
 
 }
+
+/* ! fin responsive */
