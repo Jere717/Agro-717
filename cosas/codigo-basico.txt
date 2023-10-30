@@ -1,0 +1,181 @@
+-  -  -  -  -  -  -  -  -  - EN CSS -  -  -  -  -  -  -  -  -  -
+
+    -  -  -  -  - [ codigo variado ] -  -  -  -  -
+
+    @import url("");
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        font-family: "Public Sans", sans-serif;
+        font-size: 1.2rem;
+        min-height: 100%;
+    }
+
+    -  -  -  -  - [ fin codigo variado ] -  -  -  -  -
+
+    ...
+
+    -  -  -  -  - [ grid ] -  -  -  -  -
+
+    .grid-container {
+        display: grid;
+        grid-template:
+            "" medida
+            "" medida
+            "" medida
+            "" medida
+         ;
+    }
+
+
+    -  -  -  -  - [ fin grid ] -  -  -  -  -
+
+    -  -  -  -  - [ responsive ] -  -  -  -  -
+
+    /* ! responsive */
+
+    /* ! responsive = celulares pequeños */
+
+    @media screen and (max-width: 320px)
+    {
+        .grid-container{
+            grid-template: 
+                ""
+                ""
+                ""
+                ""
+            ;
+        }
+    }
+
+    /* ! ---- */
+
+    /* ! responsive = clelulares normales */
+
+    @media screen and (max-width: 480px)
+    {
+        .grid-container{
+            grid-template: 
+                ""
+                ""
+                ""
+                ""
+            ;
+        }
+    }
+
+    /* ! ---- */
+
+    /* ! responsive = tablets */
+
+    @media screen and (max-width: 768px)
+    {
+        .grid-container{
+            grid-template: 
+                ""
+                ""
+                ""
+                ""
+            ;
+        }
+    }
+
+    /* ! ---- */
+
+    /* ! responsive = pantallas chicas */
+
+    @media screen and (max-width: 960px)
+    {
+        .grid-container{
+            grid-template: 
+                ""
+                ""
+                ""
+                ""
+            ;
+        }
+    }
+
+    /* ! ---- */
+
+    /* ! responsive = laptops */
+
+    @media screen and (max-width: 1024px)
+    {
+        .grid-container{
+            grid-template: 
+                ""
+                ""
+                ""
+                ""
+            ;
+        }
+    }
+
+    /* ! ---- */
+
+    /* ! responsive = pantallas grandes */
+
+    @media screen and (max-width: 1328px)
+    {
+        .grid-container{
+            grid-template: 
+                ""
+                ""
+                ""
+                ""
+            ;
+        }
+    }
+
+    /* ! ---- */
+
+    /* ! fin responsive */
+
+    -  -  -  -  - [ fin responsive ] -  -  -  -  -
+
+-  -  -  -  -  -  -  -  -  - FIN CSS -  -  -  -  -  -  -  -  -  -
+
+
+-  -  -  -  -  -  -  -  -  - EN HTML -  -  -  -  -  -  -  -  -  -
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <!-- # metadatos -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="archivos/css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- # fin metadatos -->
+
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+-  -  -  -  -  -  -  -  -  - FIN HTML -  -  -  -  -  -  -  -  -  -

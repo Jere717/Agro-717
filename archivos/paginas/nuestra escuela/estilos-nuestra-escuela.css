@@ -1,4 +1,4 @@
-/* codigo variado */
+/* # codigo variado */
 
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
 
@@ -18,9 +18,9 @@ body {
     min-height: 100%;
 }
 
-/* fin codigo variado */
+/* # fin codigo variado */
 
-/* header */
+/* # header */
 
 .header {
     grid-area: header;
@@ -64,9 +64,9 @@ body {
     transform: scale(1.1);
     background-color: fff;
 }
-/* fin header */
+/* # fin header */
 
-/* navbar */
+/* # navbar */
 
 .navbar {
     grid-area: navbar;
@@ -99,9 +99,9 @@ body {
     color: fff;
 }
 
-/* fin navbar */
+/* # fin navbar */
 
-/* contenido */
+/* # contenido */
 
 .main {
     grid-area: main;
@@ -146,9 +146,9 @@ body {
     border-radius: 15px;
 }
 
-/* fin contenido */
+/* # fin contenido */
 
-/* footer */
+/* # footer */
 
 .footer {
     grid-area: footer;
@@ -174,9 +174,9 @@ body {
     text-align: center;
 }
 
-/* fin footer */
+/* # fin footer */
 
-/* grid */
+/* # grid */
 
 .grid-container {
     display: grid;
@@ -188,7 +188,7 @@ body {
     ;
 }
 
-/* fin grid */
+/* # fin grid */
 
 /* ! responsive */
 
