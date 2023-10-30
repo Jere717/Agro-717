@@ -4,7 +4,8 @@
 
 - una vez modificado los archivos, las modificaciones aparecen con una ( M )
 - apreta el 3 boton de la izquierda de arriba para abajo o apreta ( CTRL + MAYÚS + G )
-- y en la barra para escribir, escribe ( commit ). por ultimo apreta ( CTRL + ENTER )
+- y en la barra para escribir, escribe ( commit ), apreta ( CTRL + ENTER )
+- luego escribe ( push ). por ultimo apreta ( CTRL + ENTER )
 
 !listo¡, se deberia aver subido las modificaciones al repositorio
 
