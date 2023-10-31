@@ -21,8 +21,6 @@ body {
 .grid-container>* {
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 4px;
-  padding: 10px;
-  text-align: center;
 }
 
 /* # fin codigo variado */
@@ -32,39 +30,51 @@ body {
 .header {
   grid-area: header;
   background-color: #229954;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.header .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header .box a {
-  width: 100px;
-  height: 40px;
-  background-color: #239B56;
-  text-decoration: none;
-  text-align: center;
+.header h1 {
   color: white;
-  border: solid black 2px;
-  border-radius: 15px;
-  transition: all 500ms ease;
-}
-
-.header .box a:hover {
-  transform: scale(1.1);
-  background-color: fff;
-}
-
-.header .box img {
-  width: 140px;
-  height: auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 /* # fin header */
+
+/* # navbar */
+
+.navbar {
+  grid-area: navbar;
+  background-color: #229954;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.navbar .box-1, .box-2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.navbar .btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.navbar .btn i {
+  margin-right: 10px;
+}
+
+
+/* # fin navbar */
 
 /* # sidebar */
 
@@ -133,9 +143,10 @@ body {
 
 .grid-container {
   display: grid;
-  gap: 10px;
+  gap: 5px;
   grid-template:
-    "header" 200px
+    "header" 50px
+    "navbar" 50px
     "main" auto
     "sidebar" 200px
     "footer" 100px;
@@ -143,9 +154,10 @@ body {
 
 .grid-container {
   grid-template-columns: 300px auto;
-  grid-template-rows: 200px auto 100px;
+  grid-template-rows: 50px 50px auto 100px;
   grid-template-areas:
     "header  header"
+    "navbar navbar"
     "sidebar main"
     "footer  footer";
 }
